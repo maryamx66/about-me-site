@@ -1,0 +1,111 @@
+:root {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  background-color: #ffffffd4;
+  box-sizing: border-box; /*put this in every css file*/
+}
+body {
+  padding: 0%;
+  margin: 0%;
+}
+.bold {
+  /*when you apply this class to any tag it's gonna make the text bold */
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Concert One", serif;
+  text-align: center;
+  color: rgb(231, 148, 155);
+  -text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.6);
+  ---webkit-text-stroke: 0.2px rgb(31, 31, 31);
+}
+
+.content {
+  max-width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
+
+.header-image {
+  width: 4rem;
+  height: auto;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(231, 148, 155);
+  font-size: 1.2rem;
+}
+
+.header-nav-container {
+  background-color: rgb(248, 225, 224);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.image-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.image-grid img {
+  width: 100%;
+  border: 1px solid rgb(106, 108, 109);
+  border-radius: 20px;
+}
+
+.pages-h2-style {
+  font-family: "Concert One", serif;
+  color: rgb(146, 141, 141);
+  font-weight: normal;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: end;
+}
+
+.icon {
+  width: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
